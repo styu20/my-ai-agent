@@ -30,5 +30,5 @@ async def chat(message: Message):
     data = response.json()
 
     return {
-        "reply": data["choices"][0]["message"]["content"]
+        "reply": data["message"]["content"]
     }
