@@ -20,8 +20,8 @@ async def chat(message: Message):
             "Content-Type": "application/json"
         },
         json={
-            "model": "openrouter/free"
-            # "model": "moonshotai/kimi-k2.5",
+            # "model": "openrouter/free"
+            "model": "moonshotai/kimi-k2.5",
             "messages": [
                 {"role": "user", "content": message.text}
             ]
